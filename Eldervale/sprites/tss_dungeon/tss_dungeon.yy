@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"L_Dungeon",
+    "path":"folders/L_Dungeon.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
