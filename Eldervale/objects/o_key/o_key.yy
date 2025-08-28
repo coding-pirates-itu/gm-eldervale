@@ -28,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"tss_dungeon",
-    "path":"sprites/tss_dungeon/tss_dungeon.yy",
+    "name":"s_key",
+    "path":"sprites/s_key/s_key.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

@@ -3,8 +3,8 @@
 /// @DnDHash : 64DEF82B
 /// @DnDArgument : "expr" "1"
 /// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "keys"
-keys += 1;
+/// @DnDArgument : "var" "global.keys"
+global.keys += 1;
 
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1

@@ -39,7 +39,7 @@ Create a new asset group `VIllage` and keep all related resources there.
     * Enable viewports
     * Make _Viewport 0_ visible
         - Camera properties: 320x240 @ 160x200
-        - Viewport properties: 1920x1080 @ 0x0
+        - Viewport properties: 1920x980 @ 0x0
         - Object following: `o_player1`
         - Borders: 160x120
 - Add new _Tiles_ layers: `Grass`, `Paths`, `Houses`.
@@ -56,6 +56,19 @@ Create a new asset group `VIllage` and keep all related resources there.
 - Add a script to `o_player_1`'s _Collision_ -> `o_house` event. Move back and then use `move_and_collide` to limit the movement.
 
 
-## Dungeon levels
+### Add goodies
 
 - Download and unpack dungeon tilset `Dungeon Tileset II Extended` from https://nijikokun.itch.io/dungeontileset-ii-extended?download
+- Create a new tileset sprite `ts_dungeon`, import from `dungeontiles-extended v1.1\dungeontiles-extended v1.1\dungeontileset-extended.png`.
+- Create sprite `s_key` 16x16 and copy its image from `tss_dungeon`.
+- Create sprite `s_chest_gold` 16x16 and copy its image from `tss_dungeon`.
+- Create object `o_key` with sprite `s_key`.
+- Create object `o_chest_gold` with sprite `s_chest_gold`.
+- Place a key and a few chests around the _Village_ map on `Obstacles` layer.
+- Create a sprite `s_entrance` 16x16, for the dungeon entrance.
+- Create an object `o_entrance` with that sprite.
+    * Add variable `is_open`, type `Boolean`, value `false`.
+- Place an entrance object somewhere on the _village_ map.
+
+## Dungeon levels
+

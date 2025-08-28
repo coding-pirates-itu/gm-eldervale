@@ -30,9 +30,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_empty_tl",
-    "path":"sprites/s_empty_tl/s_empty_tl.yy",
+    "name":"s_entrance",
+    "path":"sprites/s_entrance/s_entrance.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
