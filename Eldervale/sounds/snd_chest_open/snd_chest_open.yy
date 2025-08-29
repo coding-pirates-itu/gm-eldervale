@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_chest_open",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":4.992018,
+  "name":"snd_chest_open",
+  "parent":{
+    "name":"L_Dungeon",
+    "path":"folders/L_Dungeon.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_chest_open.mp3",
+  "type":0,
+  "volume":1.0,
+}

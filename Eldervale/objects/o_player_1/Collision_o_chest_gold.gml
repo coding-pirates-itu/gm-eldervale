@@ -6,15 +6,19 @@
 if(!(other.is_open)){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 3715DB77
-	/// @DnDInput : 2
 	/// @DnDParent : 38CBF23D
 	/// @DnDArgument : "expr" "1"
 	/// @DnDArgument : "expr_relative" "1"
-	/// @DnDArgument : "expr_1" "other"
 	/// @DnDArgument : "var" "global.gold"
-	/// @DnDArgument : "var_1" "to_destroy"
 	global.gold += 1;
-	to_destroy = other;
+
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 21AD0E9A
+	/// @DnDParent : 38CBF23D
+	/// @DnDArgument : "soundid" "snd_chest_open"
+	/// @DnDSaveInfo : "soundid" "snd_chest_open"
+	audio_play_sound(snd_chest_open, 0, 0, 1.0, undefined, 1.0);
 
 	/// @DnDAction : YoYo Games.Common.Apply_To
 	/// @DnDVersion : 1
@@ -34,13 +38,6 @@ if(!(other.is_open)){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 2D980A8F
 		/// @DnDParent : 5FAC00C2
-		image_speed = 1;
-	
-		/// @DnDAction : YoYo Games.Instances.Set_Alarm
-		/// @DnDVersion : 1
-		/// @DnDHash : 7A2CDFD4
-		/// @DnDComment : Alarm 0 is for destroying an entity with a delay
-		/// @DnDParent : 5FAC00C2
-		/// @DnDArgument : "steps" "2"
-		alarm_set(0, 2);
+		/// @DnDArgument : "speed" "5"
+		image_speed = 5;
 	}}

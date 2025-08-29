@@ -3,7 +3,7 @@
   "%Name":"tss_dungeon",
   "bboxMode":0,
   "bbox_bottom":431,
-  "bbox_left":11,
+  "bbox_left":0,
   "bbox_right":922,
   "bbox_top":0,
   "collisionKind":1,

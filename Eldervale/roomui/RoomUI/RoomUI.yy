@@ -9,7 +9,7 @@
         {"$GMRFlexPanel":"","%Name":"pnl_gold","alignItems":2,"children":[
             {"$GMRInstance":"v2","%Name":"inst_50944B99","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50944B99","objectId":{"name":"o_gold_panel","path":"objects/o_gold_panel/o_gold_panel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.06,"scaleY":2.28125,"x":0.0,"y":0.0,},
           ],"flexDirection":0,"height":{"unit":3,"value":32.0,},"justifyContent":1,"name":"pnl_gold","nodeColour":4282970842,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":100.0,},},
-      ],"flexDirection":2,"gapColumn":10.0,"gridX":32,"gridY":32,"justifyContent":0,"name":"Stats","nodeColour":4282970785,"paddingBottom":{"unit":1,"value":10.0,},"paddingLeft":{"unit":1,"value":10.0,},"paddingRight":{"unit":1,"value":10.0,},"paddingTop":{"unit":1,"value":10.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+      ],"flexDirection":2,"gapColumn":10.0,"gridX":8,"gridY":8,"justifyContent":0,"name":"Stats","nodeColour":4282970785,"paddingBottom":{"unit":1,"value":10.0,},"paddingLeft":{"unit":1,"value":10.0,},"paddingRight":{"unit":1,"value":10.0,},"paddingTop":{"unit":1,"value":10.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0",},
   ],
   "locked":false,
   "name":"RoomUI",

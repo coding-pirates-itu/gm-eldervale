@@ -5,8 +5,8 @@
   "isDnD":true,
   "name":"GetMoveInput",
   "parent":{
-    "name":"Eldervale",
-    "path":"Eldervale.yyp",
+    "name":"Common",
+    "path":"folders/Common.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

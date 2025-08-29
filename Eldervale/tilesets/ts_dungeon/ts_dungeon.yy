@@ -1,7 +1,9 @@
 {
   "$GMTileSet":"v1",
   "%Name":"ts_dungeon",
-  "autoTileSets":[],
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"dungeon_path","closed_edge":true,"name":"dungeon_path","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[647,640,641,706,704,642,710,645,705,646,643,644,707,709,708,581,],},
+  ],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
