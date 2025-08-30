@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"TransitionFadeOutDone",
+  "isCompatibility":false,
+  "isDnD":true,
+  "name":"TransitionFadeOutDone",
+  "parent":{
+    "name":"Transitions",
+    "path":"folders/Transitions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
