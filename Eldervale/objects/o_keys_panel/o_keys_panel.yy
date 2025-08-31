@@ -3,7 +3,6 @@
   "%Name":"o_keys_panel",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"o_keys_panel",
@@ -12,7 +11,10 @@
     "name":"Player",
     "path":"folders/Player.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_panel_base",
+    "path":"objects/o_panel_base/o_panel_base.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -1,32 +1,49 @@
-/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
-/// @DnDHash : 5E35E35F
-/// @DnDArgument : "var" "global.keys"
-/// @DnDArgument : "op" "2"
-if(global.keys > 0){	/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDHash : 199A3DB8
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "other.is_open"
+/// @DnDArgument : "not" "1"
+/// @DnDArgument : "expr_1" "global.keys > 0"
+if(!(other.is_open) && global.keys > 0){	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 44918202
 	/// @DnDInput : 2
-	/// @DnDApplyTo : other
-	/// @DnDParent : 5E35E35F
+	/// @DnDParent : 199A3DB8
 	/// @DnDArgument : "expr" "-1"
 	/// @DnDArgument : "expr_relative" "1"
 	/// @DnDArgument : "expr_1" "true"
 	/// @DnDArgument : "var" "global.keys"
-	/// @DnDArgument : "var_1" "is_open"
-	with(other) {
+	/// @DnDArgument : "var_1" "other.is_open"
 	global.keys += -1;
-	is_open = true;
-	
-	}}
+	other.is_open = true;}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
 /// @DnDHash : 7DF132DF
-/// @DnDApplyTo : other
-/// @DnDArgument : "expr" "is_open and !global.in_room_transition"
-with(other) var l7DF132DF_0 = is_open and !global.in_room_transition;
-if(l7DF132DF_0){	/// @DnDAction : YoYo Games.Audio.Play_Audio
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "other.is_open"
+/// @DnDArgument : "expr_1" "global.in_room_transition"
+/// @DnDArgument : "not_1" "1"
+if(other.is_open && !(global.in_room_transition)){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 70C968D9
+	/// @DnDParent : 7DF132DF
+	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "var" "can_move"
+	can_move = false;
+
+	/// @DnDAction : YoYo Games.Particles.Effect
+	/// @DnDVersion : 1
+	/// @DnDHash : 3856591F
+	/// @DnDParent : 7DF132DF
+	/// @DnDArgument : "x_relative" "1"
+	/// @DnDArgument : "y_relative" "1"
+	/// @DnDArgument : "type" "1"
+	/// @DnDArgument : "where" "1"
+	effect_create_above(1, x + 0, y + 0, 0, $FFFFFF & $ffffff);
+
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
 	/// @DnDVersion : 1.1
 	/// @DnDHash : 12FFC7AF
 	/// @DnDParent : 7DF132DF

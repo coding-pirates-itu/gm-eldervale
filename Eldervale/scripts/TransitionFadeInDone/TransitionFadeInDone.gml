@@ -13,7 +13,11 @@ function TransitionFadeInDone() {	/// @DnDAction : YoYo Games.Common.Execute_C
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 576BDEFE
+	/// @DnDInput : 2
 	/// @DnDParent : 7595182C
 	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "expr_1" "true"
 	/// @DnDArgument : "var" "global.in_room_transition"
-	global.in_room_transition = false;}
+	/// @DnDArgument : "var_1" "o_player_1.can_move"
+	global.in_room_transition = false;
+	o_player_1.can_move = true;}
