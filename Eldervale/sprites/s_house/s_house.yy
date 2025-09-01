@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"L_Village",
-    "path":"folders/L_Village.yy",
+    "name":"Common",
+    "path":"folders/Common.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

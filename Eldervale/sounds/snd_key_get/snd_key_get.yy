@@ -12,8 +12,8 @@
   "duration":1.7040136,
   "name":"snd_key_get",
   "parent":{
-    "name":"L_Dungeon",
-    "path":"folders/L_Dungeon.yy",
+    "name":"Collectibles",
+    "path":"folders/Collectibles.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

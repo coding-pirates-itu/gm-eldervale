@@ -33,6 +33,22 @@ if(other.is_open && !(global.in_room_transition)){	/// @DnDAction : YoYo Games
 	/// @DnDArgument : "var" "can_move"
 	can_move = false;
 
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1.1
+	/// @DnDHash : 12FFC7AF
+	/// @DnDParent : 7DF132DF
+	/// @DnDArgument : "soundid" "snd_down_the_stairs"
+	/// @DnDSaveInfo : "soundid" "snd_down_the_stairs"
+	audio_play_sound(snd_down_the_stairs, 0, 0, 1.0, undefined, 1.0);
+
+	/// @DnDAction : YoYo Games.Movement.Jump_To_Point
+	/// @DnDVersion : 1
+	/// @DnDHash : 777170AA
+	/// @DnDParent : 7DF132DF
+	/// @DnDArgument : "x" "other.x"
+	/// @DnDArgument : "y" "other.y"
+	x = other.x;y = other.y;
+
 	/// @DnDAction : YoYo Games.Particles.Effect
 	/// @DnDVersion : 1
 	/// @DnDHash : 3856591F
@@ -43,18 +59,13 @@ if(other.is_open && !(global.in_room_transition)){	/// @DnDAction : YoYo Games
 	/// @DnDArgument : "where" "1"
 	effect_create_above(1, x + 0, y + 0, 0, $FFFFFF & $ffffff);
 
-	/// @DnDAction : YoYo Games.Audio.Play_Audio
-	/// @DnDVersion : 1.1
-	/// @DnDHash : 12FFC7AF
-	/// @DnDParent : 7DF132DF
-	/// @DnDArgument : "soundid" "snd_down_the_stairs"
-	/// @DnDSaveInfo : "soundid" "snd_down_the_stairs"
-	audio_play_sound(snd_down_the_stairs, 0, 0, 1.0, undefined, 1.0);
-
 	/// @DnDAction : YoYo Games.Common.Function_Call
 	/// @DnDVersion : 1
 	/// @DnDHash : 2832C604
+	/// @DnDInput : 3
 	/// @DnDParent : 7DF132DF
 	/// @DnDArgument : "function" "StartTransition"
-	/// @DnDArgument : "arg" "other.to_room, seq_fade_out, seq_fade_in"
+	/// @DnDArgument : "arg" "other.to_room"
+	/// @DnDArgument : "arg_1" "seq_fade_out"
+	/// @DnDArgument : "arg_2" "seq_fade_in"
 	StartTransition(other.to_room, seq_fade_out, seq_fade_in);}

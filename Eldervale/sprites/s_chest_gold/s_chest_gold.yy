@@ -46,8 +46,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"L_Dungeon",
-    "path":"folders/L_Dungeon.yy",
+    "name":"Collectibles",
+    "path":"folders/Collectibles.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

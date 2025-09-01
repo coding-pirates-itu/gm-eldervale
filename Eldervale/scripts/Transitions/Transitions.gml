@@ -8,13 +8,16 @@
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 00B4BD55
-/// @DnDInput : 2
+/// @DnDInput : 3
 /// @DnDArgument : "expr" "false"
 /// @DnDArgument : "expr_1" "noone"
+/// @DnDArgument : "expr_2" "-1"
 /// @DnDArgument : "var" "global.in_room_transition"
 /// @DnDArgument : "var_1" "global.target_room"
+/// @DnDArgument : "var_2" "global.target_room_sequence"
 global.in_room_transition = false;
 global.target_room = noone;
+global.target_room_sequence = -1;
 
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
@@ -26,11 +29,15 @@ function PlaceTransition(sequence) {	/// @DnDAction : YoYo Games.Common.Execut
 	/// @DnDVersion : 1
 	/// @DnDHash : 33520C97
 	/// @DnDParent : 23056357
-	/// @DnDArgument : "code" "/// @description Place a transition on its own layer in the current room$(13_10)if (layer_exists(TRANS_LAYER_NAME)) layer_destroy(TRANS_LAYER_NAME);$(13_10)var trans_layer = layer_create(-9999, TRANS_LAYER_NAME);$(13_10)layer_sequence_create(trans_layer, 0, 0, sequence);$(13_10)"
+	/// @DnDArgument : "code" "/// @description Place a transition on its own layer in the current room$(13_10)if (layer_exists(TRANS_LAYER_NAME)) layer_destroy(TRANS_LAYER_NAME);$(13_10)var trans_layer = layer_create(-9999, TRANS_LAYER_NAME);$(13_10)var cam = view_camera[0];$(13_10)var cam_x = camera_get_view_x(cam);$(13_10)var cam_y = camera_get_view_y(cam);$(13_10)var seq = layer_sequence_create(trans_layer, cam_x, cam_y, sequence);$(13_10)return seq;$(13_10)"
 	/// @description Place a transition on its own layer in the current room
 	if (layer_exists(TRANS_LAYER_NAME)) layer_destroy(TRANS_LAYER_NAME);
 	var trans_layer = layer_create(-9999, TRANS_LAYER_NAME);
-	layer_sequence_create(trans_layer, 0, 0, sequence);}
+	var cam = view_camera[0];
+	var cam_x = camera_get_view_x(cam);
+	var cam_y = camera_get_view_y(cam);
+	var seq = layer_sequence_create(trans_layer, cam_x, cam_y, sequence);
+	return seq;}
 
 /// @DnDAction : YoYo Games.Common.Function
 /// @DnDVersion : 1
@@ -49,43 +56,23 @@ function StartTransition(target_room, sequence_out, sequence_in) {	/// @DnDAct
 	if(!(global.in_room_transition)){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 335560E1
-		/// @DnDInput : 2
+		/// @DnDInput : 3
 		/// @DnDParent : 6C5258A9
 		/// @DnDArgument : "expr" "true"
 		/// @DnDArgument : "expr_1" "target_room"
+		/// @DnDArgument : "expr_2" "sequence_in"
 		/// @DnDArgument : "var" "global.in_room_transition"
 		/// @DnDArgument : "var_1" "global.target_room"
+		/// @DnDArgument : "var_2" "global.target_room_sequence"
 		global.in_room_transition = true;
 		global.target_room = target_room;
+		global.target_room_sequence = sequence_in;
 	
 		/// @DnDAction : YoYo Games.Common.Function_Call
 		/// @DnDVersion : 1
 		/// @DnDHash : 78A043D0
+		/// @DnDComment : Prepare the out-transition; the in-transition is set$(13_10)in Room STart event of o_transition_controller
 		/// @DnDParent : 6C5258A9
 		/// @DnDArgument : "function" "PlaceTransition"
 		/// @DnDArgument : "arg" "sequence_out"
-		PlaceTransition(sequence_out);
-	
-		/// @DnDAction : YoYo Games.Common.Execute_Code
-		/// @DnDVersion : 1
-		/// @DnDHash : 48ABBDD7
-		/// @DnDParent : 6C5258A9
-		/// @DnDArgument : "code" "/// @description Set room for the next operation$(13_10)layer_set_target_room(target_room);"
-		/// @description Set room for the next operation
-		layer_set_target_room(target_room);
-	
-		/// @DnDAction : YoYo Games.Common.Function_Call
-		/// @DnDVersion : 1
-		/// @DnDHash : 5BC86142
-		/// @DnDParent : 6C5258A9
-		/// @DnDArgument : "function" "PlaceTransition"
-		/// @DnDArgument : "arg" "sequence_in"
-		PlaceTransition(sequence_in);
-	
-		/// @DnDAction : YoYo Games.Common.Execute_Code
-		/// @DnDVersion : 1
-		/// @DnDHash : 59C481AC
-		/// @DnDParent : 6C5258A9
-		/// @DnDArgument : "code" "/// @description Set room back to current$(13_10)layer_reset_target_room();"
-		/// @description Set room back to current
-		layer_reset_target_room();}}
+		PlaceTransition(sequence_out);}}

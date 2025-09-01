@@ -11,9 +11,9 @@
   "defaultScriptType":2,
   "Folders":[
     {"$GMFolder":"","%Name":"Common","folderPath":"folders/Common.yy","name":"Common","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Collectibles","folderPath":"folders/Collectibles.yy","name":"Collectibles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"L_Dungeon","folderPath":"folders/L_Dungeon.yy","name":"L_Dungeon","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"L_Village","folderPath":"folders/L_Village.yy","name":"L_Village","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Transitions","folderPath":"folders/Transitions.yy","name":"Transitions","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
@@ -36,6 +36,7 @@
     {"id":{"name":"o_panel_base","path":"objects/o_panel_base/o_panel_base.yy",},},
     {"id":{"name":"o_player_1","path":"objects/o_player_1/o_player_1.yy",},},
     {"id":{"name":"o_player_position_controller","path":"objects/o_player_position_controller/o_player_position_controller.yy",},},
+    {"id":{"name":"o_transition_controller","path":"objects/o_transition_controller/o_transition_controller.yy",},},
     {"id":{"name":"o_ui_controller","path":"objects/o_ui_controller/o_ui_controller.yy",},},
     {"id":{"name":"r_dungeon_1","path":"rooms/r_dungeon_1/r_dungeon_1.yy",},},
     {"id":{"name":"r_village","path":"rooms/r_village/r_village.yy",},},

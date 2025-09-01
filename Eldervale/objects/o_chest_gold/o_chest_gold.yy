@@ -9,8 +9,8 @@
   "name":"o_chest_gold",
   "overriddenProperties":[],
   "parent":{
-    "name":"L_Dungeon",
-    "path":"folders/L_Dungeon.yy",
+    "name":"Collectibles",
+    "path":"folders/Collectibles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

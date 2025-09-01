@@ -12,8 +12,8 @@
   "duration":3.24,
   "name":"snd_down_the_stairs",
   "parent":{
-    "name":"L_Dungeon",
-    "path":"folders/L_Dungeon.yy",
+    "name":"Collectibles",
+    "path":"folders/Collectibles.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

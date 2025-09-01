@@ -6,8 +6,8 @@
   "name":"o_house",
   "overriddenProperties":[],
   "parent":{
-    "name":"L_Village",
-    "path":"folders/L_Village.yy",
+    "name":"Common",
+    "path":"folders/Common.yy",
   },
   "parentObjectId":null,
   "persistent":false,
