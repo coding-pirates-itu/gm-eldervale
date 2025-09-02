@@ -1,5 +1,19 @@
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
+/// @DnDHash : 0D3C689A
+/// @DnDInput : 2
+/// @DnDArgument : "expr" "x == target_x"
+/// @DnDArgument : "expr_1" "y == target_y"
+if(x == target_x && y == target_y){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 37A60394
+	/// @DnDParent : 0D3C689A
+	/// @DnDArgument : "expr" "false"
+	/// @DnDArgument : "var" "move_to_mouse"
+	move_to_mouse = false;}
+
+/// @DnDAction : YoYo Games.Common.If_Expression
+/// @DnDVersion : 1
 /// @DnDHash : 3A67917A
 /// @DnDArgument : "expr" "can_move"
 if(can_move){	/// @DnDAction : YoYo Games.Common.Execute_Script
@@ -7,9 +21,8 @@ if(can_move){	/// @DnDAction : YoYo Games.Common.Execute_Script
 	/// @DnDHash : 36195CAC
 	/// @DnDParent : 3A67917A
 	/// @DnDArgument : "script" "GetMoveInput"
-	/// @DnDArgument : "arg" "move_speed"
 	/// @DnDSaveInfo : "script" "GetMoveInput"
-	script_execute(GetMoveInput, move_speed);}
+	script_execute(GetMoveInput);}
 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
@@ -20,17 +33,7 @@ else{	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDParent : 6F55BA80
 	/// @DnDArgument : "expr" "false"
 	/// @DnDArgument : "var" "is_moving"
-	is_moving = false;
-
-	/// @DnDAction : YoYo Games.Instances.Set_Instance_Var
-	/// @DnDVersion : 1
-	/// @DnDHash : 1657DBE6
-	/// @DnDInput : 2
-	/// @DnDParent : 6F55BA80
-	/// @DnDArgument : "instvar" "4"
-	/// @DnDArgument : "instvar_1" "5"
-	hspeed = 0;
-	vspeed = 0;}
+	is_moving = false;}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
@@ -61,3 +64,14 @@ else{	/// @DnDAction : YoYo Games.Instances.Set_Instance_Var
 /// @DnDArgument : "expr" "facing"
 /// @DnDArgument : "var" "image_xscale"
 image_xscale = facing;
+
+/// @DnDAction : YoYo Games.Movement.move_and_collide
+/// @DnDVersion : 1
+/// @DnDHash : 714200DA
+/// @DnDArgument : "xvel" "target_x - x"
+/// @DnDArgument : "yvel" "target_y - y"
+/// @DnDArgument : "num_iterations" "8"
+/// @DnDArgument : "maxxmove" "move_speed"
+/// @DnDArgument : "maxymove" "move_speed"
+/// @DnDArgument : "object" "bounds"
+move_and_collide(target_x - x, target_y - y, bounds,8,0,0,move_speed,move_speed);
