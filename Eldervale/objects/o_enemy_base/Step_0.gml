@@ -52,8 +52,8 @@ if(state == EnemyStates.CHASE){	/// @DnDAction : YoYo Games.Common.If_Expressi
 		/// @DnDArgument : "yvel" "o_player_1.y - y"
 		/// @DnDArgument : "maxxmove" "move_speed"
 		/// @DnDArgument : "maxymove" "move_speed"
-		/// @DnDArgument : "object" "bounds, o_obstacle"
-		move_and_collide(o_player_1.x - x, o_player_1.y - y, [bounds, o_obstacle],4,0,0,move_speed,move_speed);}}
+		/// @DnDArgument : "object" "bounds, o_obstacle, o_enemy_base"
+		move_and_collide(o_player_1.x - x, o_player_1.y - y, [bounds, o_obstacle, o_enemy_base],4,0,0,move_speed,move_speed);}}
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -75,8 +75,8 @@ if(state == EnemyStates.RETURN){	/// @DnDAction : YoYo Games.Common.If_Variabl
 		/// @DnDArgument : "yvel" "path_get_y(idle_path, 0) - y"
 		/// @DnDArgument : "maxxmove" "move_speed"
 		/// @DnDArgument : "maxymove" "move_speed"
-		/// @DnDArgument : "object" "bounds, o_obstacle"
-		move_and_collide(path_get_x(idle_path, 0) - x, path_get_y(idle_path, 0) - y, [bounds, o_obstacle],4,0,0,move_speed,move_speed);
+		/// @DnDArgument : "object" "bounds, o_obstacle, o_enemy_base"
+		move_and_collide(path_get_x(idle_path, 0) - x, path_get_y(idle_path, 0) - y, [bounds, o_obstacle, o_enemy_base],4,0,0,move_speed,move_speed);
 	
 		/// @DnDAction : YoYo Games.Common.If_Expression
 		/// @DnDVersion : 1

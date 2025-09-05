@@ -42,6 +42,7 @@
     {"id":{"name":"o_player_position_controller","path":"objects/o_player_position_controller/o_player_position_controller.yy",},},
     {"id":{"name":"o_transition_controller","path":"objects/o_transition_controller/o_transition_controller.yy",},},
     {"id":{"name":"p_level1_01","path":"paths/p_level1_01/p_level1_01.yy",},},
+    {"id":{"name":"p_level1_02","path":"paths/p_level1_02/p_level1_02.yy",},},
     {"id":{"name":"r_dungeon_1","path":"rooms/r_dungeon_1/r_dungeon_1.yy",},},
     {"id":{"name":"r_village","path":"rooms/r_village/r_village.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},

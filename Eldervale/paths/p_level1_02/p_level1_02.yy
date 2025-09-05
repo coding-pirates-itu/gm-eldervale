@@ -1,0 +1,19 @@
+{
+  "$GMPath":"",
+  "%Name":"p_level1_02",
+  "closed":false,
+  "kind":1,
+  "name":"p_level1_02",
+  "parent":{
+    "name":"L_Dungeon",
+    "path":"folders/L_Dungeon.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":696.0,"y":232.0,},
+    {"speed":100.0,"x":704.0,"y":176.0,},
+    {"speed":100.0,"x":760.0,"y":168.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
