@@ -1,0 +1,24 @@
+{
+  "$GMRoomUI":"",
+  "%Name":"RoomUI",
+  "children":[
+    {"$GMRUILayer":"v1","%Name":"UILayer_1","alignItems":1,"children":[
+        {"$GMRFlexPanel":"","%Name":"pnl_keys","alignItems":2,"children":[
+            {"$GMRInstance":"v4","%Name":"inst_52B5E60C","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":4,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52B5E60C","objectId":{"name":"o_keys_panel","path":"objects/o_keys_panel/o_keys_panel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.46875,"scaleY":2.0,"x":0.0,"y":0.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":32.0,},"justifyContent":1,"name":"pnl_keys","nodeColour":4282970840,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":32.0,},},
+        {"$GMRFlexPanel":"","%Name":"pnl_gold","alignItems":2,"children":[
+            {"$GMRInstance":"v4","%Name":"inst_33022813","colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33022813","objectId":{"name":"o_gold_panel","path":"objects/o_gold_panel/o_gold_panel.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.92,"scaleY":2.0,"x":96.0,"y":32.0,},
+          ],"flexDirection":0,"height":{"unit":3,"value":32.0,},"justifyContent":1,"name":"pnl_gold","nodeColour":4282970699,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":100.0,},},
+      ],"flexDirection":2,"gapColumn":20.0,"gridX":32,"gridY":32,"justifyContent":0,"name":"UILayer_1","nodeColour":4294092360,"paddingBottom":{"unit":1,"value":20.0,},"paddingLeft":{"unit":1,"value":20.0,},"paddingRight":{"unit":1,"value":20.0,},"paddingTop":{"unit":1,"value":20.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0",},
+  ],
+  "locked":false,
+  "name":"RoomUI",
+  "parent":{
+    "name":"Eldervale",
+    "path":"Eldervale.yyp",
+  },
+  "resourceType":"GMRoomUI",
+  "resourceVersion":"2.0",
+  "viewspaceChildren":[],
+  "visible":true,
+}

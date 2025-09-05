@@ -9,7 +9,10 @@
     "name":"Collectibles",
     "path":"folders/Collectibles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_obstacle",
+    "path":"objects/o_obstacle/o_obstacle.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -24,8 +27,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"is_open","filters":[],"listItems":[],"multiselect":false,"name":"is_open","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"to_room","filters":[
+    {"$GMObjectProperty":"v2","%Name":"is_open","filters":[],"listItems":[],"multiselect":false,"name":"is_open","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v2","%Name":"to_room","filters":[
         "GMRoom",
       ],"listItems":[],"multiselect":false,"name":"to_room","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],

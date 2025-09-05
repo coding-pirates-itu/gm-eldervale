@@ -9,7 +9,10 @@
     "name":"Collectibles",
     "path":"folders/Collectibles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_obstacle",
+    "path":"objects/o_obstacle/o_obstacle.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
